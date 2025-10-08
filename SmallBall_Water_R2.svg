@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="288pt" height="288pt" viewBox="0 0 288 288" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2025-09-30T12:47:12.106733</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.3, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 288 
+L 288 288 
+L 288 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 62.03 246.04 
+L 277.2 246.04 
+L 277.2 10.8 
+L 62.03 10.8 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <path d="M 63.660076 246.04 
+L 63.660076 10.8 
+" clip-path="url(#p52adef0213)" style="fill: none; stroke: #b0b0b0; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_2">
+      <defs>
+       <path id="mda56ee6be7" d="M 0 0 
+L 0 3.5 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#mda56ee6be7" x="63.660076" y="246.04" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <!-- 10 -->
+      <g transform="translate(57.624138 260.638438) scale(0.1 -0.1)">
+       <defs>
+        <path id="HackGen35Console-Regular-31" d="M 850 531 
+L 1831 531 
+L 1831 3875 
+L 1088 3031 
+L 744 3450 
+L 1825 4663 
+L 2456 4663 
+L 2456 531 
+L 3425 531 
+L 3425 0 
+L 850 0 
+L 850 531 
+z
+" transform="scale(0.015625)"/>
+        <path id="HackGen35Console-Regular-30" d="M 1925 -88 
+Q 1144 -88 763 506 
+Q 375 1100 375 2325 
+Q 375 3550 763 4150 
+Q 1144 4750 1925 4750 
+Q 2306 4750 2597 4606 
+Q 2888 4463 3088 4150 
+Q 3475 3550 3475 2325 
+Q 3475 1113 3088 513 
+Q 2888 200 2597 56 
+Q 2306 -88 1925 -88 
+z
+M 1925 425 
+Q 2400 425 2613 863 
+Q 2819 1288 2819 2325 
+Q 2819 3363 2613 3800 
+Q 2400 4238 1925 4238 
+Q 1456 4238 1244 3800 
+Q 1031 3350 1031 2325 
+Q 1031 1313 1244 863 
+Q 1456 425 1925 425 
+z
+M 1925 1800 
+Q 1763 1800 1656 1950 
+Q 1544 2088 1544 2325 
+Q 1544 2563 1653 2709 
+Q 1763 2856 1925 2856 
+Q 2088 2856 2197 2709 
+Q 2306 2563 2306 2325 
+Q 2306 2088 2197 1944 
+Q 2088 1800 1925 1800 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#HackGen35Console-Regular-31"/>
+       <use xlink:href="#HackGen35Console-Regular-30" transform="translate(60.351562 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_3">
+      <path d="M 104.41197 246.04 
+L 104.41197 10.8 
+" clip-path="url(#p52adef0213)" style="fill: none; stroke: #b0b0b0; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#mda56ee6be7" x="104.41197" y="246.04" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <!-- 15 -->
+      <g transform="translate(98.376032 260.638438) scale(0.1 -0.1)">
+       <defs>
+        <path id="HackGen35Console-Regular-35" d="M 1644 -88 
+Q 1506 -88 1331 -75 
+Q 1156 -63 1006 -38 
+Q 844 -13 712 25 
+Q 581 63 456 113 
+L 456 750 
+Q 750 594 1031 519 
+Q 1319 438 1606 438 
+Q 2156 438 2431 713 
+Q 2713 988 2713 1488 
+Q 2713 1763 2634 1956 
+Q 2556 2150 2419 2275 
+Q 2288 2400 2084 2475 
+Q 1881 2550 1594 2550 
+Q 1350 2550 1113 2500 
+Q 869 2438 656 2325 
+L 656 4663 
+L 3019 4663 
+L 3019 4138 
+L 1231 4138 
+L 1231 2988 
+Q 1369 3038 1500 3063 
+Q 1619 3088 1775 3088 
+Q 2150 3088 2440 2969 
+Q 2731 2850 2925 2656 
+Q 3344 2225 3344 1500 
+Q 3344 750 2906 331 
+Q 2694 125 2381 18 
+Q 2069 -88 1644 -88 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#HackGen35Console-Regular-31"/>
+       <use xlink:href="#HackGen35Console-Regular-35" transform="translate(60.351562 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_5">
+      <path d="M 145.163864 246.04 
+L 145.163864 10.8 
+" clip-path="url(#p52adef0213)" style="fill: none; stroke: #b0b0b0; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#mda56ee6be7" x="145.163864" y="246.04" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <!-- 20 -->
+      <g transform="translate(139.127926 260.638438) scale(0.1 -0.1)">
+       <defs>
+        <path id="HackGen35Console-Regular-32" d="M 481 419 
+Q 481 531 556 613 
+Q 731 800 981 1056 
+Q 1231 1313 1506 1619 
+Q 1719 1850 1825 1969 
+Q 1931 2088 1987 2150 
+Q 2044 2213 2106 2288 
+Q 2269 2488 2369 2625 
+Q 2469 2763 2531 2900 
+Q 2644 3138 2638 3388 
+Q 2631 3775 2406 4000 
+Q 2175 4225 1775 4219 
+Q 1213 4213 519 3800 
+L 519 4438 
+Q 844 4588 1156 4675 
+Q 1469 4750 1769 4750 
+Q 2094 4750 2375 4662 
+Q 2656 4575 2869 4388 
+Q 3056 4225 3168 3984 
+Q 3281 3744 3281 3444 
+Q 3281 3138 3144 2825 
+Q 3075 2669 2969 2522 
+Q 2863 2375 2694 2175 
+Q 2606 2069 2481 1928 
+Q 2356 1788 2188 1606 
+Q 2069 1481 1969 1378 
+Q 1869 1275 1756 1163 
+Q 1756 1163 1494 900 
+Q 1356 750 1144 531 
+L 3319 531 
+L 3319 0 
+L 481 0 
+L 481 419 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#HackGen35Console-Regular-32"/>
+       <use xlink:href="#HackGen35Console-Regular-30" transform="translate(60.351562 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_7">
+      <path d="M 185.915758 246.04 
+L 185.915758 10.8 
+" clip-path="url(#p52adef0213)" style="fill: none; stroke: #b0b0b0; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#mda56ee6be7" x="185.915758" y="246.04" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <!-- 25 -->
+      <g transform="translate(179.87982 260.638438) scale(0.1 -0.1)">
+       <use xlink:href="#HackGen35Console-Regular-32"/>
+       <use xlink:href="#HackGen35Console-Regular-35" transform="translate(60.351562 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_9">
+      <path d="M 226.667652 246.04 
+L 226.667652 10.8 
+" clip-path="url(#p52adef0213)" style="fill: none; stroke: #b0b0b0; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#mda56ee6be7" x="226.667652" y="246.04" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <!-- 30 -->
+      <g transform="translate(220.631714 260.638438) scale(0.1 -0.1)">
+       <defs>
+        <path id="HackGen35Console-Regular-33" d="M 1775 -88 
+Q 1625 -88 1459 -75 
+Q 1294 -63 1131 -31 
+Q 994 -6 819 38 
+Q 644 75 469 138 
+L 469 775 
+Q 631 694 784 628 
+Q 938 563 1100 525 
+Q 1256 488 1406 463 
+Q 1556 438 1719 438 
+Q 2244 438 2513 675 
+Q 2794 913 2794 1338 
+Q 2794 1763 2519 2000 
+Q 2244 2238 1756 2238 
+L 1281 2238 
+L 1281 2750 
+L 1756 2750 
+Q 2194 2750 2444 2944 
+Q 2681 3138 2681 3488 
+Q 2681 3838 2456 4025 
+Q 2238 4213 1800 4219 
+Q 1531 4219 1231 4156 
+Q 931 4094 613 3969 
+L 613 4550 
+Q 994 4650 1288 4700 
+Q 1569 4750 1819 4750 
+Q 2144 4750 2419 4663 
+Q 2694 4588 2906 4413 
+Q 3306 4075 3306 3506 
+Q 3306 3306 3250 3147 
+Q 3194 2988 3094 2863 
+Q 2881 2613 2469 2500 
+Q 2931 2375 3169 2063 
+Q 3294 1900 3356 1706 
+Q 3419 1513 3419 1288 
+Q 3419 650 2988 275 
+Q 2775 94 2475 3 
+Q 2175 -88 1775 -88 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#HackGen35Console-Regular-33"/>
+       <use xlink:href="#HackGen35Console-Regular-30" transform="translate(60.351562 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_11">
+      <path d="M 267.419545 246.04 
+L 267.419545 10.8 
+" clip-path="url(#p52adef0213)" style="fill: none; stroke: #b0b0b0; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_12">
+      <g>
+       <use xlink:href="#mda56ee6be7" x="267.419545" y="246.04" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <!-- 35 -->
+      <g transform="translate(261.383608 260.638438) scale(0.1 -0.1)">
+       <use xlink:href="#HackGen35Console-Regular-33"/>
+       <use xlink:href="#HackGen35Console-Regular-35" transform="translate(60.351562 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="text_7">
+     <!-- Steps -->
+     <g transform="translate(154.525156 274.316562) scale(0.1 -0.1)">
+      <defs>
+       <path id="HackGen35Console-Regular-53" d="M 1831 -88 
+Q 1494 -88 1162 -19 
+Q 831 50 500 188 
+L 500 863 
+Q 850 638 1181 525 
+Q 1494 425 1819 425 
+Q 2294 425 2569 638 
+Q 2831 850 2831 1250 
+Q 2831 1588 2656 1763 
+Q 2556 1863 2406 1931 
+Q 2256 2000 2019 2050 
+L 1681 2131 
+Q 1369 2206 1131 2309 
+Q 894 2413 731 2575 
+Q 444 2875 444 3375 
+Q 444 4013 863 4375 
+Q 1063 4550 1341 4650 
+Q 1619 4750 1981 4750 
+Q 2256 4750 2544 4688 
+Q 2688 4656 2847 4612 
+Q 3006 4569 3169 4506 
+L 3169 3863 
+Q 3019 3963 2875 4031 
+Q 2731 4100 2594 4144 
+Q 2306 4238 2013 4238 
+Q 1569 4238 1306 4025 
+Q 1044 3813 1044 3450 
+Q 1044 3288 1087 3181 
+Q 1131 3075 1219 3000 
+Q 1394 2831 1850 2725 
+L 2181 2650 
+Q 2831 2500 3131 2169 
+Q 3431 1844 3438 1281 
+Q 3438 925 3328 675 
+Q 3219 425 3031 263 
+Q 2619 -88 1831 -88 
+z
+" transform="scale(0.015625)"/>
+       <path id="HackGen35Console-Regular-74" d="M 2531 -13 
+Q 1888 -13 1619 250 
+Q 1350 513 1350 1138 
+L 1350 3050 
+L 419 3050 
+L 419 3500 
+L 1350 3500 
+L 1350 4413 
+L 1925 4663 
+L 1925 3500 
+L 3231 3500 
+L 3231 3050 
+L 1925 3050 
+L 1925 1138 
+Q 1925 750 2072 600 
+Q 2219 450 2581 450 
+L 3231 450 
+L 3231 -13 
+L 2531 -13 
+z
+" transform="scale(0.015625)"/>
+       <path id="HackGen35Console-Regular-65" d="M 2119 -88 
+Q 1313 -88 850 400 
+Q 388 888 388 1725 
+Q 388 2250 569 2669 
+Q 750 3088 1112 3338 
+Q 1475 3588 2006 3588 
+Q 2706 3588 3090 3138 
+Q 3475 2688 3475 1894 
+L 3475 1613 
+L 988 1613 
+L 988 1594 
+Q 988 1044 1275 722 
+Q 1563 400 2125 400 
+Q 2450 400 2756 500 
+Q 3063 600 3344 750 
+L 3344 175 
+Q 3044 50 2741 -19 
+Q 2438 -88 2119 -88 
+z
+M 2900 2063 
+Q 2900 2350 2812 2587 
+Q 2725 2825 2538 2963 
+Q 2338 3100 2025 3100 
+Q 1706 3100 1493 2959 
+Q 1281 2819 1159 2584 
+Q 1038 2350 1013 2063 
+L 2900 2063 
+z
+" transform="scale(0.015625)"/>
+       <path id="HackGen35Console-Regular-70" d="M 600 3500 
+L 1119 3500 
+L 1181 3050 
+Q 1481 3588 2119 3588 
+Q 2744 3588 3106 3094 
+Q 3469 2600 3469 1750 
+Q 3469 894 3106 403 
+Q 2744 -88 2119 -88 
+Q 1469 -88 1181 438 
+L 1181 -1331 
+L 600 -1331 
+L 600 3500 
+z
+M 2044 400 
+Q 2869 400 2869 1750 
+Q 2869 3100 2044 3100 
+Q 1619 3100 1400 2750 
+Q 1181 2400 1181 1750 
+Q 1181 1100 1403 750 
+Q 1625 400 2044 400 
+z
+" transform="scale(0.015625)"/>
+       <path id="HackGen35Console-Regular-73" d="M 1844 -88 
+Q 1344 -88 669 125 
+L 669 725 
+Q 1331 388 1844 388 
+Q 2206 388 2425 544 
+Q 2644 700 2644 950 
+Q 2644 1175 2462 1312 
+Q 2281 1450 1881 1531 
+L 1638 1581 
+Q 1144 1681 912 1909 
+Q 681 2138 681 2538 
+Q 681 3038 1025 3313 
+Q 1369 3588 2006 3588 
+Q 2544 3588 3044 3375 
+L 3044 2813 
+Q 2556 3100 2019 3100 
+Q 1269 3100 1269 2588 
+Q 1269 2419 1331 2322 
+Q 1394 2225 1581 2156 
+Q 1769 2088 2125 2013 
+L 2356 1975 
+Q 3225 1800 3225 1025 
+Q 3225 506 2853 209 
+Q 2481 -88 1844 -88 
+z
+" transform="scale(0.015625)"/>
+      </defs>
+      <use xlink:href="#HackGen35Console-Regular-53"/>
+      <use xlink:href="#HackGen35Console-Regular-74" transform="translate(60.351562 0)"/>
+      <use xlink:href="#HackGen35Console-Regular-65" transform="translate(120.703125 0)"/>
+      <use xlink:href="#HackGen35Console-Regular-70" transform="translate(181.054688 0)"/>
+      <use xlink:href="#HackGen35Console-Regular-73" transform="translate(241.40625 0)"/>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_13">
+      <path d="M 62.03 211.230725 
+L 277.2 211.230725 
+" clip-path="url(#p52adef0213)" style="fill: none; stroke: #b0b0b0; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_14">
+      <defs>
+       <path id="md34a0cd2f9" d="M 0 0 
+L -3.5 0 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#md34a0cd2f9" x="62.03" y="211.230725" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <!-- 0.025 -->
+      <g transform="translate(24.850313 215.029944) scale(0.1 -0.1)">
+       <defs>
+        <path id="HackGen35Console-Regular-2e" d="M 1919 -100 
+Q 1688 -100 1534 62 
+Q 1381 225 1381 475 
+Q 1381 731 1534 890 
+Q 1688 1050 1919 1050 
+Q 2150 1050 2309 887 
+Q 2469 725 2469 475 
+Q 2469 219 2309 59 
+Q 2150 -100 1919 -100 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#HackGen35Console-Regular-30"/>
+       <use xlink:href="#HackGen35Console-Regular-2e" transform="translate(60.351562 0)"/>
+       <use xlink:href="#HackGen35Console-Regular-30" transform="translate(120.703125 0)"/>
+       <use xlink:href="#HackGen35Console-Regular-32" transform="translate(181.054688 0)"/>
+       <use xlink:href="#HackGen35Console-Regular-35" transform="translate(241.40625 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_15">
+      <path d="M 62.03 172.218112 
+L 277.2 172.218112 
+" clip-path="url(#p52adef0213)" style="fill: none; stroke: #b0b0b0; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_16">
+      <g>
+       <use xlink:href="#md34a0cd2f9" x="62.03" y="172.218112" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <!-- 0.030 -->
+      <g transform="translate(24.850313 176.017331) scale(0.1 -0.1)">
+       <use xlink:href="#HackGen35Console-Regular-30"/>
+       <use xlink:href="#HackGen35Console-Regular-2e" transform="translate(60.351562 0)"/>
+       <use xlink:href="#HackGen35Console-Regular-30" transform="translate(120.703125 0)"/>
+       <use xlink:href="#HackGen35Console-Regular-33" transform="translate(181.054688 0)"/>
+       <use xlink:href="#HackGen35Console-Regular-30" transform="translate(241.40625 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_17">
+      <path d="M 62.03 133.2055 
+L 277.2 133.2055 
+" clip-path="url(#p52adef0213)" style="fill: none; stroke: #b0b0b0; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_18">
+      <g>
+       <use xlink:href="#md34a0cd2f9" x="62.03" y="133.2055" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_10">
+      <!-- 0.035 -->
+      <g transform="translate(24.850313 137.004719) scale(0.1 -0.1)">
+       <use xlink:href="#HackGen35Console-Regular-30"/>
+       <use xlink:href="#HackGen35Console-Regular-2e" transform="translate(60.351562 0)"/>
+       <use xlink:href="#HackGen35Console-Regular-30" transform="translate(120.703125 0)"/>
+       <use xlink:href="#HackGen35Console-Regular-33" transform="translate(181.054688 0)"/>
+       <use xlink:href="#HackGen35Console-Regular-35" transform="translate(241.40625 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_19">
+      <path d="M 62.03 94.192887 
+L 277.2 94.192887 
+" clip-path="url(#p52adef0213)" style="fill: none; stroke: #b0b0b0; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_20">
+      <g>
+       <use xlink:href="#md34a0cd2f9" x="62.03" y="94.192887" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_11">
+      <!-- 0.040 -->
+      <g transform="translate(24.850313 97.992106) scale(0.1 -0.1)">
+       <defs>
+        <path id="HackGen35Console-Regular-34" d="M 2306 1113 
+L 325 1113 
+L 325 1713 
+L 2200 4663 
+L 2931 4663 
+L 2931 1625 
+L 3556 1625 
+L 3556 1113 
+L 2931 1113 
+L 2931 0 
+L 2306 0 
+L 2306 1113 
+z
+M 2306 1625 
+L 2306 4088 
+L 831 1625 
+L 2306 1625 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#HackGen35Console-Regular-30"/>
+       <use xlink:href="#HackGen35Console-Regular-2e" transform="translate(60.351562 0)"/>
+       <use xlink:href="#HackGen35Console-Regular-30" transform="translate(120.703125 0)"/>
+       <use xlink:href="#HackGen35Console-Regular-34" transform="translate(181.054688 0)"/>
+       <use xlink:href="#HackGen35Console-Regular-30" transform="translate(241.40625 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_21">
+      <path d="M 62.03 55.180275 
+L 277.2 55.180275 
+" clip-path="url(#p52adef0213)" style="fill: none; stroke: #b0b0b0; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_22">
+      <g>
+       <use xlink:href="#md34a0cd2f9" x="62.03" y="55.180275" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_12">
+      <!-- 0.045 -->
+      <g transform="translate(24.850313 58.979494) scale(0.1 -0.1)">
+       <use xlink:href="#HackGen35Console-Regular-30"/>
+       <use xlink:href="#HackGen35Console-Regular-2e" transform="translate(60.351562 0)"/>
+       <use xlink:href="#HackGen35Console-Regular-30" transform="translate(120.703125 0)"/>
+       <use xlink:href="#HackGen35Console-Regular-34" transform="translate(181.054688 0)"/>
+       <use xlink:href="#HackGen35Console-Regular-35" transform="translate(241.40625 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_23">
+      <path d="M 62.03 16.167663 
+L 277.2 16.167663 
+" clip-path="url(#p52adef0213)" style="fill: none; stroke: #b0b0b0; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_24">
+      <g>
+       <use xlink:href="#md34a0cd2f9" x="62.03" y="16.167663" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_13">
+      <!-- 0.050 -->
+      <g transform="translate(24.850313 19.966881) scale(0.1 -0.1)">
+       <use xlink:href="#HackGen35Console-Regular-30"/>
+       <use xlink:href="#HackGen35Console-Regular-2e" transform="translate(60.351562 0)"/>
+       <use xlink:href="#HackGen35Console-Regular-30" transform="translate(120.703125 0)"/>
+       <use xlink:href="#HackGen35Console-Regular-35" transform="translate(181.054688 0)"/>
+       <use xlink:href="#HackGen35Console-Regular-30" transform="translate(241.40625 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="text_14">
+     <!-- MSE -->
+     <g transform="translate(18.770625 137.473906) rotate(-90) scale(0.1 -0.1)">
+      <defs>
+       <path id="HackGen35Console-Regular-4d" d="M 275 4663 
+L 1119 4663 
+L 1925 2288 
+L 2738 4663 
+L 3581 4663 
+L 3581 0 
+L 3000 0 
+L 3000 4125 
+L 2169 1663 
+L 1694 1663 
+L 856 4125 
+L 856 0 
+L 275 0 
+L 275 4663 
+z
+" transform="scale(0.015625)"/>
+       <path id="HackGen35Console-Regular-45" d="M 619 4663 
+L 3394 4663 
+L 3394 4138 
+L 1256 4138 
+L 1256 2750 
+L 3294 2750 
+L 3294 2225 
+L 1256 2225 
+L 1256 531 
+L 3450 531 
+L 3450 0 
+L 619 0 
+L 619 4663 
+z
+" transform="scale(0.015625)"/>
+      </defs>
+      <use xlink:href="#HackGen35Console-Regular-4d"/>
+      <use xlink:href="#HackGen35Console-Regular-53" transform="translate(60.351562 0)"/>
+      <use xlink:href="#HackGen35Console-Regular-45" transform="translate(120.703125 0)"/>
+     </g>
+    </g>
+   </g>
+   <g id="line2d_25">
+    <path d="M 71.810455 223.205765 
+L 79.960833 213.00748 
+L 88.111212 208.138233 
+L 96.261591 221.103897 
+L 104.41197 235.347273 
+L 112.562348 223.421134 
+L 120.712727 194.44362 
+L 128.863106 169.806166 
+L 137.013485 192.434606 
+L 145.163864 216.895698 
+L 153.314242 186.879749 
+L 161.464621 173.057679 
+L 169.615 140.557562 
+L 177.765379 153.059046 
+L 185.915758 161.359322 
+L 194.066136 177.678813 
+L 202.216515 131.808788 
+L 210.366894 97.599507 
+L 218.517273 98.383755 
+L 226.667652 121.846335 
+L 234.81803 129.383175 
+L 242.968409 80.335276 
+L 251.118788 63.480799 
+L 259.269167 25.46864 
+L 267.419545 21.492727 
+" clip-path="url(#p52adef0213)" style="fill: none; stroke: #000000; stroke-width: 1.5; stroke-linecap: square"/>
+    <defs>
+     <path id="m3ae0254c2d" d="M 0 4 
+C 1.060812 4 2.078319 3.578535 2.828427 2.828427 
+C 3.578535 2.078319 4 1.060812 4 0 
+C 4 -1.060812 3.578535 -2.078319 2.828427 -2.828427 
+C 2.078319 -3.578535 1.060812 -4 0 -4 
+C -1.060812 -4 -2.078319 -3.578535 -2.828427 -2.828427 
+C -3.578535 -2.078319 -4 -1.060812 -4 0 
+C -4 1.060812 -3.578535 2.078319 -2.828427 2.828427 
+C -2.078319 3.578535 -1.060812 4 0 4 
+z
+" style="stroke: #000000"/>
+    </defs>
+    <g clip-path="url(#p52adef0213)">
+     <use xlink:href="#m3ae0254c2d" x="71.810455" y="223.205765" style="fill: #ffffff; stroke: #000000"/>
+     <use xlink:href="#m3ae0254c2d" x="79.960833" y="213.00748" style="fill: #ffffff; stroke: #000000"/>
+     <use xlink:href="#m3ae0254c2d" x="88.111212" y="208.138233" style="fill: #ffffff; stroke: #000000"/>
+     <use xlink:href="#m3ae0254c2d" x="96.261591" y="221.103897" style="fill: #ffffff; stroke: #000000"/>
+     <use xlink:href="#m3ae0254c2d" x="104.41197" y="235.347273" style="fill: #ffffff; stroke: #000000"/>
+     <use xlink:href="#m3ae0254c2d" x="112.562348" y="223.421134" style="fill: #ffffff; stroke: #000000"/>
+     <use xlink:href="#m3ae0254c2d" x="120.712727" y="194.44362" style="fill: #ffffff; stroke: #000000"/>
+     <use xlink:href="#m3ae0254c2d" x="128.863106" y="169.806166" style="fill: #ffffff; stroke: #000000"/>
+     <use xlink:href="#m3ae0254c2d" x="137.013485" y="192.434606" style="fill: #ffffff; stroke: #000000"/>
+     <use xlink:href="#m3ae0254c2d" x="145.163864" y="216.895698" style="fill: #ffffff; stroke: #000000"/>
+     <use xlink:href="#m3ae0254c2d" x="153.314242" y="186.879749" style="fill: #ffffff; stroke: #000000"/>
+     <use xlink:href="#m3ae0254c2d" x="161.464621" y="173.057679" style="fill: #ffffff; stroke: #000000"/>
+     <use xlink:href="#m3ae0254c2d" x="169.615" y="140.557562" style="fill: #ffffff; stroke: #000000"/>
+     <use xlink:href="#m3ae0254c2d" x="177.765379" y="153.059046" style="fill: #ffffff; stroke: #000000"/>
+     <use xlink:href="#m3ae0254c2d" x="185.915758" y="161.359322" style="fill: #ffffff; stroke: #000000"/>
+     <use xlink:href="#m3ae0254c2d" x="194.066136" y="177.678813" style="fill: #ffffff; stroke: #000000"/>
+     <use xlink:href="#m3ae0254c2d" x="202.216515" y="131.808788" style="fill: #ffffff; stroke: #000000"/>
+     <use xlink:href="#m3ae0254c2d" x="210.366894" y="97.599507" style="fill: #ffffff; stroke: #000000"/>
+     <use xlink:href="#m3ae0254c2d" x="218.517273" y="98.383755" style="fill: #ffffff; stroke: #000000"/>
+     <use xlink:href="#m3ae0254c2d" x="226.667652" y="121.846335" style="fill: #ffffff; stroke: #000000"/>
+     <use xlink:href="#m3ae0254c2d" x="234.81803" y="129.383175" style="fill: #ffffff; stroke: #000000"/>
+     <use xlink:href="#m3ae0254c2d" x="242.968409" y="80.335276" style="fill: #ffffff; stroke: #000000"/>
+     <use xlink:href="#m3ae0254c2d" x="251.118788" y="63.480799" style="fill: #ffffff; stroke: #000000"/>
+     <use xlink:href="#m3ae0254c2d" x="259.269167" y="25.46864" style="fill: #ffffff; stroke: #000000"/>
+     <use xlink:href="#m3ae0254c2d" x="267.419545" y="21.492727" style="fill: #ffffff; stroke: #000000"/>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 62.03 246.04 
+L 62.03 10.8 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 277.2 246.04 
+L 277.2 10.8 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 62.03 246.04 
+L 277.2 246.04 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 62.03 10.8 
+L 277.2 10.8 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p52adef0213">
+   <rect x="62.03" y="10.8" width="215.17" height="235.24"/>
+  </clipPath>
+ </defs>
+</svg>

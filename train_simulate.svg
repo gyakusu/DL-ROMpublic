@@ -1,0 +1,82 @@
+<svg width="1732" height="1348" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    overflow="hidden">
+    <defs>
+        <clipPath id="clip0">
+            <rect x="91" y="300" width="1732" height="1348" />
+        </clipPath>
+    </defs>
+    <g clip-path="url(#clip0)" transform="translate(-91 -300)"><text
+            font-family="Times New Roman,Times New Roman_MSFontService,sans-serif" font-weight="400" font-size="92"
+            transform="matrix(1 0 0 1 1141.71 692)">10:1<tspan font-size="92" x="48.9097" y="131">9+1:1</tspan>
+            <tspan font-size="92" x="97.7558" y="261">8+2:1</tspan>
+        </text>
+        <path d="M0 0 259.843 649.606" stroke="#F33D30" stroke-width="6.875" stroke-linejoin="round"
+            stroke-miterlimit="10" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 221.5 1238.11)" />
+        <path d="M481.5 588.5 1650.79 588.5" stroke="#F33D30" stroke-width="6.875" stroke-linejoin="round"
+            stroke-miterlimit="10" fill="none" fill-rule="evenodd" />
+        <path
+            d="M91.0001 1231.12 1745.61 1231.13 1745.61 1244.88 91.0001 1244.87ZM1738.73 1217.38 1779.98 1238 1738.73 1258.63Z" />
+        <text font-family="Times New Roman,Times New Roman_MSFontService,sans-serif" font-style="italic"
+            font-weight="400" font-size="147" transform="matrix(1 0 0 1 1683 1185)">t</text>
+        <path
+            d="M6.875-2.72817e-06 6.87535 875.075-6.87465 875.075-6.875 2.72817e-06ZM20.6253 868.199 0.000360892 909.449-20.6247 868.199Z"
+            transform="matrix(1 0 0 -1 221 1367.45)" /><text
+            font-family="Times New Roman,Times New Roman_MSFontService,sans-serif" font-style="italic" font-weight="400"
+            font-size="147" transform="matrix(1 0 0 1 253.866 487)">Re</text>
+        <path d="M611.5 458.5 611.5 1367.95" stroke="#000000" stroke-width="6.875" stroke-linejoin="round"
+            stroke-miterlimit="10" stroke-dasharray="27.5 20.625" fill="none" fill-rule="evenodd" />
+        <path d="M1130.5 458.5 1130.5 1367.95" stroke="#000000" stroke-width="6.875" stroke-linejoin="round"
+            stroke-miterlimit="10" stroke-dasharray="27.5 20.625" fill="none" fill-rule="evenodd" />
+        <path d="M1520.5 458.5 1520.5 1367.95" stroke="#000000" stroke-width="6.875" stroke-linejoin="round"
+            stroke-miterlimit="10" stroke-dasharray="27.5 20.625" fill="none" fill-rule="evenodd" /><text fill="#02557A"
+            font-family="Times New Roman,Times New Roman_MSFontService,sans-serif" font-weight="400" font-size="147"
+            transform="matrix(1 0 0 1 725.192 1526)">trai<tspan font-size="147" x="195.365" y="0">n</tspan>
+            <tspan fill="#341D5C" font-size="147" x="373.277" y="0">simulate</tspan>
+        </text>
+        <path
+            d="M645.375 1360.13 1096.31 1360.13 1096.31 1373.88 645.375 1373.88ZM652.25 1387.63 611 1367 652.25 1346.38ZM1089.43 1346.38 1130.68 1367 1089.43 1387.63Z"
+            fill="#03A9F4" />
+        <path
+            d="M1164.37 1360.13 1485.39 1360.13 1485.39 1373.88 1164.37 1373.88ZM1171.25 1387.63 1130 1367 1171.25 1346.38ZM1478.51 1346.38 1519.76 1367 1478.51 1387.63Z"
+            fill="#673AB7" />
+        <path d="M611.5 722.5 733.5 722.5 733.5 718.5 741.5 726.5 733.5 734.5 733.5 730.5 611.5 730.5Z" stroke="#02557A"
+            stroke-width="9.16667" stroke-miterlimit="8" fill="#F44336" fill-rule="evenodd" />
+        <path d="M750.5 722.5 779.5 722.5 779.5 718.5 787.5 726.5 779.5 734.5 779.5 730.5 750.5 730.5Z" stroke="#63CDFD"
+            stroke-width="9.16667" stroke-miterlimit="8" fill="#F44336" fill-rule="evenodd" /><text
+            font-family="Times New Roman,Times New Roman_MSFontService,sans-serif" font-weight="400" font-size="92"
+            transform="matrix(1 0 0 1 633.98 692)">10:1</text>
+        <path d="M666.5 777.5 788.5 777.5 788.5 773.5 796.5 781.5 788.5 789.5 788.5 785.5 666.5 785.5Z" stroke="#02557A"
+            stroke-width="9.16667" stroke-miterlimit="8" fill="#F44336" fill-rule="evenodd" />
+        <path d="M805.5 777.5 834.5 777.5 834.5 773.5 842.5 781.5 834.5 789.5 834.5 785.5 805.5 785.5Z" stroke="#63CDFD"
+            stroke-width="9.16667" stroke-miterlimit="8" fill="#F44336" fill-rule="evenodd" />
+        <path d="M721.5 832.5 843.5 832.5 843.5 828.5 851.5 836.5 843.5 844.5 843.5 840.5 721.5 840.5Z" stroke="#02557A"
+            stroke-width="9.16667" stroke-miterlimit="8" fill="#F44336" fill-rule="evenodd" />
+        <path d="M860.5 832.5 889.5 832.5 889.5 828.5 897.5 836.5 889.5 844.5 889.5 840.5 860.5 840.5Z" stroke="#63CDFD"
+            stroke-width="9.16667" stroke-miterlimit="8" fill="#F44336" fill-rule="evenodd" />
+        <path d="M1130.5 722.5 1252.5 722.5 1252.5 718.5 1260.5 726.5 1252.5 734.5 1252.5 730.5 1130.5 730.5Z"
+            stroke="#341D5C" stroke-width="9.16667" stroke-miterlimit="8" fill="#F44336" fill-rule="evenodd" />
+        <path d="M1270.5 722.5 1299.5 722.5 1299.5 718.5 1307.5 726.5 1299.5 734.5 1299.5 730.5 1270.5 730.5Z"
+            stroke="#673AB7" stroke-width="9.16667" stroke-miterlimit="8" fill="#F44336" fill-rule="evenodd" /><text
+            font-family="Times New Roman,Times New Roman_MSFontService,sans-serif" font-weight="400" font-size="92"
+            transform="matrix(1 0 0 1 802.355 953)">…<tspan font-family="Meiryo,Meiryo_MSFontService,sans-serif"
+                font-size="92" x="0" y="212">×</tspan>
+            <tspan font-size="92" x="96.823" y="212">800</tspan>
+            <tspan font-family="Meiryo,Meiryo_MSFontService,sans-serif" font-size="92" x="405.862" y="215">×</tspan>
+            <tspan font-size="92" x="502.685" y="215">35</tspan>
+        </text>
+        <path d="M1185.5 853 1261.5 853 1261.5 848.5 1270.5 857.5 1261.5 866.5 1261.5 862 1185.5 862Z" stroke="#341D5C"
+            stroke-width="9.16667" stroke-miterlimit="8" fill="#F44336" fill-rule="evenodd" />
+        <path d="M1325.5 852.5 1354.5 852.5 1354.5 848.5 1362.5 856.5 1354.5 864.5 1354.5 860.5 1325.5 860.5Z"
+            stroke="#673AB7" stroke-width="9.16667" stroke-miterlimit="8" fill="#F44336" fill-rule="evenodd" />
+        <path d="M1380.5 986.5 1409.5 986.5 1409.5 982.5 1417.5 990.5 1409.5 998.5 1409.5 994.5 1380.5 994.5Z"
+            stroke="#673AB7" stroke-width="9.16667" stroke-miterlimit="8" fill="#F44336" fill-rule="evenodd" />
+        <path d="M1279.5 852.5 1308.5 852.5 1308.5 848.5 1316.5 856.5 1308.5 864.5 1308.5 860.5 1279.5 860.5Z"
+            stroke="#673AB7" stroke-width="9.16667" stroke-miterlimit="8" fill="#F44336" fill-rule="evenodd" />
+        <path d="M1333.5 986.5 1362.5 986.5 1362.5 982.5 1370.5 990.5 1362.5 998.5 1362.5 994.5 1333.5 994.5Z"
+            stroke="#673AB7" stroke-width="9.16667" stroke-miterlimit="8" fill="#F44336" fill-rule="evenodd" />
+        <path d="M1285.5 986.5 1314.5 986.5 1314.5 982.5 1322.5 990.5 1314.5 998.5 1314.5 994.5 1285.5 994.5Z"
+            stroke="#673AB7" stroke-width="9.16667" stroke-miterlimit="8" fill="#F44336" fill-rule="evenodd" />
+        <path d="M1237.5 986.5 1266.5 986.5 1266.5 982.5 1274.5 990.5 1266.5 998.5 1266.5 994.5 1237.5 994.5Z"
+            stroke="#341D5C" stroke-width="9.16667" stroke-miterlimit="8" fill="#F44336" fill-rule="evenodd" />
+    </g>
+</svg>

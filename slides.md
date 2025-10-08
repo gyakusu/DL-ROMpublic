@@ -1,0 +1,243 @@
+
+<section>
+  <h2>深層学習を用いた２次元軸受空洞内の</h2>
+  <h2>流体流れの低次モデリング</h2>
+  <p>G33 10/10(金) 10:00</p>
+  <p>日本精工（株） （正）*楠崎 晃司 （正）*野田 隆史</p>
+  <p>Koji Kususaki*, Takashi Noda*, *NSK Ltd.</p>
+  <p>連絡先: <a href="mailto:kususaki@nsk.com">kususaki@nsk.com</a></p>
+</section>
+
+---
+
+<section>
+  <h2>目次</h2>
+  <ul>
+    <li>CFDとAI</li>
+    <li>DL-ROM</li>
+    <li>評価・学習モデル</li>
+    <li>結果</li>
+    <li>成果と今後の展望</li>
+  </ul>
+</section>
+
+---
+
+<section data-auto-animate>
+  <h2>CFDとAI</h2>
+</section>
+
+<section data-auto-animate>
+  <h2>CFDとAI</h2>
+  <p>軸受におけるCFD解析の活用</p>
+  <img src="media.gif" style="height: 700px;"/>
+  <span style="display: inline-block;" class="fragment fade-up">✔️机上での検討が可能 ❌️計算コストが高い（day~week / 1s）</span>
+</section>
+
+<section data-auto-animate>
+  <h2>CFDとAI</h2>
+  <p>CFDの計算コストをAIを用いて抑える</p>
+</section>
+
+<section data-auto-animate>
+  <h2>CFDとAI</h2>
+  <p>CFDの計算コストをAIを用いて抑える</p>
+  <img src="DL_POF_2.gif" style="height: 600px;"/>
+  <p style="font-size: 0.5em;">Pant P, et al. Deep learning for reduced order modelling and efficient temporal evolution of fluid simulations. Phys Fluids. 2021; 33(10):107101.</p>
+  <p class="fragment fade-up">流体の運動パターンを学習し，支配方程式の代替を作成</p>
+</section>
+
+<section data-auto-animate>
+  <h2>CFDとAI</h2>
+  <img src="CFDAI_ALL.png" style="height: 800px;"/>
+  <p style="font-size: 0.5em;">>Haixin Wang, et al. Recent Advances on Machine Learning for Computational Fluid Dynamics: A Survey. arXiv:2408.12171 [cs.LG], 2024.</p>
+  <p>今回紹介する DL-ROM の他にも，CFDへのAI適応には様々な種類があります</p>
+</section>
+
+---
+
+<section data-auto-animate>
+  <h2>DL-ROM</h2>
+</section>
+
+<section data-auto-animate>
+  <h2>DL-ROM</h2>
+  <p>深層学習を用いた低次モデル作成</p>
+  <p>Deep Learning for Reduced Order Modelling</p>
+  <!-- <p>**D**eep **L**earning for **R**educed **O**rder **M**odelling</p> -->
+  <img src="framework_nn.png" style="width: 1500px;"/>
+  <p style="font-size: 0.5em;">>Pant P, et al. Deep learning for reduced order modelling and efficient temporal evolution of fluid simulations. Phys Fluids. 2021; 33(10):107101.</p>
+</section>
+
+<section data-auto-animate>
+  <h2>DL-ROM</h2>
+  <img src="framework_nn.png" style="width: 1500px;"/>
+  <ul class="plain-list">
+    <li class="fragment fade-up">データ：　空間2次元 + 時間1次元の立体格子</li>
+    <li>　</li>
+    <li class="fragment fade-up">特徴：　　時間発展計算</li>
+    <li>　</li>
+    <li class="fragment fade-up">制約：　　格子数一定</li>
+    <li class="fragment fade-up">　　　　　矩形データ形状</li>
+    <li class="fragment fade-up">　　　　　境界内部にも値をもつ</li>
+  </ul>
+</section>
+
+<section data-auto-animate>
+  <h2>DL-ROM</h2>
+  <img src="framework_nn.png" style="width: 1500px;"/>
+  <ul class="plain-list">
+    <li class="fragment fade-up">入力は流体のsnapshot 10枚</li>
+    <li class="fragment fade-up"> → shape=(320×80×10)</li>
+    <li class="fragment fade-up"> → shape=(32) のベクトルに圧縮</li>
+    <li class="fragment fade-up"> → shape=(320×80×1) に展開</li>
+    <li class="fragment fade-up"> → 流体のsnapshot 1枚を出力する</li>
+  </ul>
+</section>
+
+<section data-auto-animate>
+  <h2>DL-ROM</h2>
+  <p>ネットワークの具体的な構成</p>
+  <img src="Architecture Finale.png" style="height: 700px;"/>
+  <p>（畳み込み・規格化・活性化関数）× 5 → （転置畳み込み・規格化・活性化関数）× 5</p>
+</section>
+
+---
+
+<section data-auto-animate>
+  <h2>評価・学習モデル</h2>
+</section>
+
+<section data-auto-animate>
+  <h2>評価・学習モデル</h2>
+  <p>軸受を模した平面円環流体を対象とした．商用CFDにて計算を実行．</p>
+  <div style="display: flex; justify-content: flex-start; gap: 1px;">
+      <img src="693_SmallBall_Water_SmallOutputIntervalFull.gif" style="width: 1200px; height: 800px;"/>
+    <img src="fig1.png" style="height: 800px;"/>
+  </div>
+</section>
+
+<section data-auto-animate>
+  <h2>評価・学習モデル</h2>
+  <div style="display: flex; justify-content: flex-start; gap: 1px;">
+    <img src="693_SmallBall_Water.gif" style="width: 1200px; height: 900px;"/>
+    <ul style="text-align: left;">
+    </br></br></br>
+      <li class="fragment fade-up">流体：単相ニュートン流体</br>　</li>
+      <li class="fragment fade-up">レイノルズ数 Re: 400</br>　</li>
+      <li class="fragment fade-up">円筒形状 → 極座標で矩形データ化</br>　</li>
+      <li class="fragment fade-up">座標系を回転（玉位置固定）</br>　</li>
+      <li class="fragment fade-up">商用CFDで渦度を出力</br>→ 平均0，分散1となるよう規格化</br>　</li>
+      <li class="fragment fade-up">境界内部は0埋め</br>　</li>
+    </ul>
+  </div>
+</section>
+
+<section data-auto-animate>
+  <h2>評価・学習モデル</h2>
+  <p>トレーニングとテストの分割</p>
+  <div style="display: flex; justify-content: flex-start; gap: 1px;">
+    <img src="train_test.svg" style="width: 800px;"/>
+    <ul style="text-align: left;">
+    </br>
+      <li class="fragment fade-up">1000枚中800枚を学習用，200枚を評価用</br>　</li>
+      <li class="fragment fade-up">DL-ROMは10枚の入力から11枚目を予測する</br>　</li>
+      <li class="fragment fade-up">trainではDL-ROMの予測が一致するよう学習</br>　</li>
+      <li class="fragment fade-up">testではDL-ROMの予測がどれだけ一致するか評価</br>　</li>
+      <li class="fragment fade-up">評価指標：平均自乗誤差（Mean Squared Error）
+      </br><span style="font-size: 0.8em;">$$\text{MSE} = \frac{1}{\text{Var}(\Omega_{\text{CFD},i})} \frac{1}{N} \sum_{i=1}^{N} (\Omega_{\text{CFD},i} - {\Omega}_{pred,i})^2$$</span></li>
+    </ul>
+  </div>
+</section>
+
+<section data-auto-animate>
+  <h2>評価・学習モデル</h2>
+  <p>学習の結果</p>
+  <div style="display: flex; justify-content: center; gap: 1px;">
+    <img src="train_test.svg" style="width: 800px;"/>
+    <img src="training_plot.svg" style="width: 900px;"/>
+  </div>
+  <p>CPU: Intel(R) Xeon(R) CPU E5-2643 v4 @ 3.40GHz</br>GPU: NVIDIA GeForce GTX 1080 8GB / RAM: 100GB</br>学習時間: ~10h</p>
+</section>
+
+---
+
+<section data-auto-animate>
+  <h2>結果</h2>
+</section>
+
+<section data-auto-animate>
+  <h2>結果</h2>
+  <p>DL-ROMによる流体シミュレーション</p>
+  <div style="display: flex; justify-content: center; gap: 1px;">
+    <img src="train_simulate.svg" style="width: 900px;"/>
+    <ul style="text-align: left;" class="plain-list">
+    </br>
+      <li class="fragment fade-up">最初の10枚はtest用データを使用</br>　</li>
+      <li class="fragment fade-up"> → 10枚の入力から11枚目を予測</br>　</li>
+      <li class="fragment fade-up"> → 11枚目の予測を入力に追加し，12枚目を予測</br>　</li>
+      <li class="fragment fade-up"> → これを繰り返し，35枚まで予測</br>　</li>
+    </ul>
+  </div>
+</section>
+
+<section data-auto-animate>
+  <h2>結果</h2>
+  <p>DL-ROMによる流体シミュレーション</p>
+  <div style="display: flex; justify-content: center; gap: 1px;">
+    <p style="text-align: left;"></br>CFDの結果</br>(800min / 1s)</br></br></br></br>DL-ROMの予測</br>(3min / 1s)</br></br></br></br>差分</p>
+    <div style="display: flex; flex-direction: column; gap: 1px;">
+      <img src="label.gif" style="width: 800px;"/>
+      <img src="pred.gif" style="width: 800px;"/>
+      <img src="diff.gif" style="width: 800px;"/>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 1px;" class="fragment fade-up">
+    <img src="SmallBall_Water_R2.svg" style="height: 500px;"/>
+    <p><span style="font-size: 0.7em;">$$\text{MSE} = \frac{1}{\text{Var}(\Omega_{\text{CFD},i})} \frac{1}{N} \sum_{i=1}^{N} (\Omega_{\text{CFD},i} - {\Omega}_{pred,i})^2$$</span></p>
+    </div>
+  </div>
+  <h3 class="fragment fade-up">260倍の高速化を実現</h3>
+</section>
+
+---
+
+<section data-auto-animate>
+  <h2>成果と今後の展望</h2>
+</section>
+
+<section data-auto-animate>
+  <h2>成果と今後の展望</h2>
+  </br>
+  <div style="display: flex; justify-content: space-between; gap: 1px;">
+    <div style="flex: 10;">
+      <h3>本研究で得られたもの</h3>
+      <ul>
+        <li>DL-ROMを2次元軸受内流体に適用</li>
+        <ul>
+          <li>円筒空間を極座標で表現</li>
+          <li>画像などに用いられる畳み込みNNを使用</li>
+        </ul>
+        <li>学習の評価条件</li>
+        <ul>
+          <li>レイノルズ数Re: 400</li>
+          <li>単相のニュートン流体</li>
+          <li>境界内部を0埋めで表現</li>
+          <li>流体の渦度を学習</li>
+        </ul>
+        <li>学習の結果</li>
+        <ul>
+          <li>CFDの入力から次の時間ステップを予測</li>
+          <li>260倍の高速化を実現</li>
+        </ul>
+      </ul>
+    </div>
+    <div style="flex: 10;" class="fragment fade-up">
+      <h3>今後の展望</h3>
+      <ul>
+        <li>3次元軸受内流体への適用</li>
+        <li>非ニュートン流体・気液混相</li>
+        <li>境界内部0埋め以外の表現方法</li>
+      </ul>
+    </div>
+  </div>
+</section>

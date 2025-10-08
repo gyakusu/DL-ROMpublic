@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>triboJP25</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/theme/white.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/plugin/highlight/monokai.css">
+    <style>
+        .reveal .plain-list {
+            list-style-type: none;
+            /* 必要に応じて、非表示にしたことで失われた左側の余白を調整することもできます */
+            /* padding-left: 0; */
+            /* margin-left: 0; */
+        }
+
+        /* NSKロゴを右上に固定配置 */
+        .nsk-logo {
+            position: fixed;
+            top: 100px;
+            right: 100px;
+            width: 300px;
+            /* ロゴのサイズを調整 */
+            height: auto;
+            z-index: 1000;
+            /* スライドコンテンツより上に表示 */
+            opacity: 1.0;
+            /* 少し透明にして控えめに */
+        }
+
+        /* フッター全体のスタイル */
+        .reveal-footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 80px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-top: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            z-index: 1000;
+            font-size: 30px;
+            color: #333;
+        }
+
+        /* 著作権表示のスタイル */
+        .copyright {
+            font-weight: bold;
+        }
+
+        /* ページ番号のスタイル */
+        .page-number {
+            font-weight: bold;
+            color: #666;
+        }
+
+        /* デフォルトのスライド番号を非表示 */
+        .reveal .slide-number {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- NSKロゴを右上に配置 -->
+    <img src="NSK.png" alt="NSK Logo" class="nsk-logo">
+
+    <!-- フッター -->
+    <div class="reveal-footer">
+        <div class="copyright">Copyright NSK Ltd. All Rights Reserved.</div>
+        <div class="page-number" id="page-number">1</div>
+    </div>
+
+    <div class="reveal">
+        <div class="slides">
+            <section data-markdown="slides.md" data-separator="^\r?\n---\r?\n$" data-separator-vertical="^\r?\n--\r?\n$"
+                data-separator-notes="^Note:" data-charset="utf-8">
+            </section>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/plugin/notes/notes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/plugin/math/math.js"></script>
+
+    <script>
+        // スライド全体の挙動設定
+        Reveal.initialize({
+            // トランジションを"slide"に設定
+            transition: 'slide',
+            // スライド番号を非表示（カスタムページ番号を使用）
+            slideNumber: false,
+            // ページ送りの矢印を非表示
+            controls: false,
+            // スライドの幅と高さを設定
+            width: 1920,
+            height: 1080,
+            // Markdownプラグインを有効化
+            plugins: [
+                RevealMarkdown,
+                RevealNotes,
+                RevealHighlight,
+                RevealMath
+            ]
+        });
+
+        // ページ番号を更新する関数
+        function updatePageNumber() {
+            const currentSlide = Reveal.getIndices().h + 1;
+            document.getElementById('page-number').textContent = `${currentSlide}`;
+        }
+
+        // スライド変更時にページ番号を更新
+        Reveal.on('slidechanged', updatePageNumber);
+        Reveal.on('ready', updatePageNumber);
+    </script>
+</body>
+
+</html>
