@@ -1,0 +1,421 @@
+<section>
+    <h2>Deep Learning-Based Reduced Order Modeling</h2>
+    <h2>of Fluid Flow in 2D Bearing Cavity</h2>
+    <p>Tribology Conference 2025 Autumn Hakodate</p>
+    <p>G33 10/10(Fri) 10:00</p>
+    <p>NSK Ltd. *Koji Kususaki, *Takashi Noda</p>
+    <p>Koji Kususaki*, Takashi Noda*, *NSK Ltd.</p>
+    <p>Contact: <a href="mailto:kususaki@nsk.com">kususaki@nsk.com</a></p>
+    <aside class="notes">
+        Hello, I am Kususaki from NSK, and I will present "Deep Learning-Based Reduced Order Modeling of Fluid Flow in
+        2D Bearing Cavity".
+    </aside>
+</section>
+
+---
+
+<section>
+    <h2>Agenda</h2>
+    <ul>
+        <li>CFD and AI</li>
+        <li>DL-ROM</li>
+        <li>Evaluation and Learning Model</li>
+        <li>Results</li>
+        <li>Achievements and Future Prospects</li>
+    </ul>
+    <aside class="notes">
+        This is the agenda for today's presentation.
+        First, I will briefly explain the relationship between CFD and AI.
+        Next, I will describe the DL-ROM method used in this study.
+        After that, I will explain the evaluation and learning model, and finally discuss the results and achievements
+        along with future prospects.
+    </aside>
+</section>
+
+---
+
+<section data-auto-animate>
+    <h2>CFD and AI</h2>
+    <aside class="notes">
+        First, let me explain the relationship between CFD and AI.
+    </aside>
+</section>
+
+<section data-auto-animate>
+    <h2>CFD and AI</h2>
+    <p>Application of CFD Analysis in Bearings</p>
+    <img src="media.gif" style="height: 700px;" />
+    <p class="fragment fade-up"><span style="color: green;">✔︎</span>Desktop examination possible <span
+            style="color: red;">✖︎</span>High computational cost (day~week / 1s)</p>
+    <aside class="notes">
+        In bearings, CFD analysis is useful for design studies because it can provide detailed understanding of fluid
+        behavior. This is an example of CFD analysis of fluid within bearings that our company published previously. As
+        you can see, we can visualize phenomena such as where grease accumulates in detail, and we can also analyze
+        phenomena that are difficult to visualize, such as shear heating and resulting viscosity reduction. However, CFD
+        analysis has high computational costs, and it can take days to weeks to analyze one second of fluid behavior.
+        Therefore, it is not suitable when we want to examine many parameters in the early stages of design studies.
+    </aside>
+</section>
+
+<section data-auto-animate>
+    <h2>CFD and AI</h2>
+    <p>Reducing CFD computational cost using AI</p>
+    <aside class="notes">
+        Therefore, methods that use AI to reduce CFD computational costs have been attracting attention in recent years.
+        By executing computationally expensive CFD in advance and using the results to train AI, the AI functions as a
+        substitute for CFD. This can significantly reduce CFD computational costs. Specifically, we can predict the same
+        outputs as CFD - flow velocity and pressure distributions - in much shorter time than CFD.
+    </aside>
+</section>
+
+<section data-auto-animate>
+    <h2>CFD and AI</h2>
+    <p>Reducing CFD computational cost using AI</p>
+    <img src="DL_POF_2.gif" style="height: 600px;" />
+    <p style="font-size: 0.5em;">Pant P, et al. Deep learning for reduced order modelling and efficient temporal
+        evolution
+        of fluid simulations. Phys Fluids. 2021; 33(10):107101.</p>
+    <p class="fragment fade-up">Learning fluid motion patterns and creating substitutes for governing equations</p>
+    <aside class="notes">
+        For example, let me explain using the DL-ROM that I implemented. This is a method that uses deep learning to
+        learn fluid motion patterns and create substitutes for governing equations. In this method, we train a deep
+        learning model using fluid behavior calculated by CFD. After training, the deep learning model functions as a
+        substitute for CFD and can predict fluid behavior in much shorter time than CFD. The upper left shows the input
+        fluid state, and the upper right shows the output of the next time step's fluid state predicted by DL-ROM. I
+        will explain the details later, but the AI model learns temporal and spatial fluid behavior and predicts the
+        fluid state at the next time step. The lower part shows the configuration of the deep learning model, which uses
+        convolutional neural networks to compress and expand fluid states.
+    </aside>
+</section>
+
+<section data-auto-animate>
+    <h2>CFD and AI</h2>
+    <img src="CFDAI_ALL.png" style="height: 800px;" />
+    <p style="font-size: 0.5em;">Haixin Wang, et al. Recent Advances on Machine Learning for Computational Fluid
+        Dynamics: A Survey. arXiv:2408.12171 [cs.LG], 2024.</p>
+    <p>Besides the DL-ROM introduced today, there are various types of AI applications to CFD</p>
+    <aside class="notes">
+        As shown in this figure, there are various types of methods that use AI to reduce CFD computational costs. This
+        is a figure cited from a recently published review paper on AI applications to CFD. The DL-ROM I introduced
+        today corresponds to "Reduced Order Modeling" at the bottom of the figure. There are also methods that
+        incorporate AI into CFD calculation methods themselves, and methods that use AI for CFD preprocessing and
+        post-processing. Each of these methods has its own characteristics and needs to be selected according to the
+        problem being applied. This review paper was published by researchers from China, and it is very clear and
+        excellent content, so I encourage those who are interested to take a look.
+    </aside>
+</section>
+
+---
+
+<section data-auto-animate>
+    <h2>DL-ROM</h2>
+    <aside class="notes">
+        Next, let me explain DL-ROM.
+    </aside>
+</section>
+
+<section data-auto-animate>
+    <h2>DL-ROM</h2>
+    <p>Creating reduced-order models using deep learning</p>
+    <style>
+        .red {
+            color: red;
+        }
+    </style>
+    <p><span class="red">D</span>eep <span class="red">L</span>earning for <span class="red">R</span>educed <span
+            class="red">O</span>rder <span class="red">M</span>odelling</p>
+    <img src="framework_nn.png" style="width: 1500px;" />
+    <p style="font-size: 0.5em;">Pant P, et al. Deep learning for reduced order modelling and efficient temporal
+        evolution of fluid simulations. Phys Fluids. 2021; 33(10):107101.</p>
+    <aside class="notes">
+        DL-ROM stands for Deep Learning for Reduced Order Modelling, and is a method for creating reduced-order models
+        using deep learning. As shown in this figure, DL-ROM mainly consists of three parts. First, there is an encoder
+        that compresses the fluid state. Next, there is a part that evolves the compressed state in time. Finally, there
+        is a decoder that expands the time-evolved state back to its original shape. By combining these three parts,
+        DL-ROM efficiently predicts fluid states.
+    </aside>
+</section>
+
+<section data-auto-animate>
+    <h2>DL-ROM</h2>
+    <img src="framework_nn.png" style="width: 1500px;" />
+    <ul class="plain-list">
+        <li class="fragment fade-up">Data: 3D grid with 2D space + 1D time</li>
+        <li>　</li>
+        <li class="fragment fade-up">Feature: Time evolution calculation</li>
+        <li>　</li>
+        <li class="fragment fade-up">Constraints: Fixed grid number</li>
+        <li class="fragment fade-up">　　　　　Rectangular data shape</li>
+        <li class="fragment fade-up">　　　　　Values exist inside boundaries</li>
+    </ul>
+    <aside class="notes">
+        The data handled by DL-ROM is 3D grid data with 2D space and 1D time. A characteristic feature of DL-ROM is that
+        it performs time evolution calculations. On the other hand, DL-ROM has several constraints. First, the grid
+        number must be constant. We cannot increase or decrease the grid number during calculations. Also, the data
+        shape must be rectangular. This is because we use convolutional neural networks that are used in image
+        recognition. Furthermore, values must exist inside boundaries. Boundaries refer to non-fluid regions such as the
+        cylinder and its interior in this figure. We need to prepare data to satisfy these constraints.
+    </aside>
+</section>
+
+<section data-auto-animate>
+    <h2>DL-ROM</h2>
+    <img src="framework_nn.png" style="width: 1500px;" />
+    <ul class="plain-list">
+        <li class="fragment fade-up">Input is 10 fluid snapshots</li>
+        <li class="fragment fade-up"> → shape=(320×80×10)</li>
+        <li class="fragment fade-up"> → compressed to vector with shape=(32)</li>
+        <li class="fragment fade-up"> → expanded to shape=(320×80×1)</li>
+        <li class="fragment fade-up"> → outputs 1 fluid snapshot</li>
+    </ul>
+    <aside class="notes">
+        Let me explain in more detail using specific data. First, we use 10 fluid snapshots as input to DL-ROM. For
+        example, if each snapshot has a 2D data with 320×80 grid points, combining 10 snapshots results in data with
+        shape 320×80×10. This data is compressed by the encoder into a vector with shape 32. This vector contains
+        learned information about the fluid at the next time step. Next, this vector is expanded by the decoder back to
+        data with shape 320×80×1. This outputs one fluid snapshot for the next time step.
+    </aside>
+</section>
+
+<section data-auto-animate>
+    <h2>DL-ROM</h2>
+    <p>Specific network architecture</p>
+    <img src="Architecture Finale.png" style="height: 700px;" />
+    <p>(Convolution・Normalization・Activation function) × 5 → (Transposed convolution・Normalization・Activation function)
+        × 5</p>
+    <aside class="notes">
+        Finally, let me explain the specific network architecture of DL-ROM. As shown in this figure, DL-ROM consists of
+        an encoder and decoder. The encoder consists of 5 convolutional layers, batch normalization layers, and
+        activation function layers. This compresses input data and generates low-dimensional feature vectors. On the
+        other hand, the decoder consists of 5 transposed convolutional layers, batch normalization layers, and
+        activation function layers. This expands feature vectors back to their original shape and predicts fluid states
+        at the next time step.
+    </aside>
+</section>
+
+---
+
+<section data-auto-animate>
+    <h2>Evaluation and Learning Model</h2>
+    <aside class="notes">
+        To be honest, all the explanation so far has been about existing research, and the original part of this study
+        starts from here. Next, let me explain the evaluation and learning model. In this study, we targeted fluid in 2D
+        bearing cavities. Let me explain the details.
+    </aside>
+</section>
+
+<section data-auto-animate>
+    <h2>Evaluation and Learning Model</h2>
+    <p>We targeted planar annular fluid simulating bearings. Calculations were performed using commercial CFD.</p>
+    <div style="display: flex; justify-content: flex-start; gap: 1px;">
+        <img src="693_SmallBall_Water_SmallOutputIntervalFull.gif" style="width: 1200px; height: 800px;" />
+        <img src="fig1.png" style="height: 800px;" />
+    </div>
+    <aside class="notes">
+        In this study, we targeted fluid in 2D bearing cavities. As shown in this figure, we targeted planar annular
+        fluid simulating bearings and calculated fluid behavior using commercial CFD software. The left figure shows the
+        fluid behavior calculated by CFD, and the right figure shows the boundary conditions of the calculation domain.
+        We calculated how fluid flows within such a geometry using CFD.
+    </aside>
+</section>
+
+<section data-auto-animate>
+    <h2>Evaluation and Learning Model</h2>
+    <div style="display: flex; justify-content: flex-start; gap: 1px;">
+        <img src="693_SmallBall_Water.gif" style="width: 1200px; height: 900px;" />
+        <ul style="text-align: left;">
+            <br><br><br>
+            <li class="fragment fade-up">Fluid: Single-phase Newtonian fluid<br>　</li>
+            <li class="fragment fade-up">Reynolds number Re: 400<br>　</li>
+            <li class="fragment fade-up">Output vorticity from commercial CFD<br>→ Normalized to mean 0, variance 1<br>　
+            </li>
+            <li class="fragment fade-up">Interior boundaries filled with zeros<br>　</li>
+            <li class="fragment fade-up">Rotating coordinate system (fixed ball position)<br>　</li>
+            <li class="fragment fade-up">Cylindrical shape → rectangular data using polar coordinates<br>　</li>
+        </ul>
+    </div>
+    <aside class="notes">
+        We targeted single-phase Newtonian fluid with Reynolds number 400. Since the inner ring has the highest
+        velocity, we defined the Reynolds number using this velocity, bearing dimensions, and fluid viscosity. CFD
+        output fluid vorticity, which was normalized to have mean 0 and variance 1. Interior boundaries were represented
+        by zero-filling. We also rotated the coordinate system to fix the ball position. This is because learning
+        becomes difficult when boundary conditions change over time. Furthermore, we converted cylindrical shape data to
+        rectangular data using polar coordinates. This is the most important preprocessing in this study. This allows us
+        to satisfy the rectangular data shape constraint of DL-ROM. By performing this preprocessing, we prepared data
+        to satisfy DL-ROM constraints.
+    </aside>
+</section>
+
+<section data-auto-animate>
+    <h2>Evaluation and Learning Model</h2>
+    <p>Training and test data split</p>
+    <div style="display: flex; justify-content: flex-start; gap: 1px;">
+        <img src="train_test.svg" style="width: 800px;" />
+        <ul style="text-align: left;">
+            <br><br>
+            <li class="fragment fade-up">800 out of 1000 snapshots for training, 200 for evaluation<br>　</li>
+            <li class="fragment fade-up">DL-ROM predicts 11th snapshot from 10 inputs<br>　</li>
+            <li class="fragment fade-up">In training, DL-ROM learns to match predictions<br>　</li>
+            <li class="fragment fade-up">In testing, we evaluate how well DL-ROM predictions match<br>　</li>
+            <li class="fragment fade-up">Evaluation metric: Mean Squared Error
+                <br><span style="font-size: 0.8em;">$$\text{MSE} = \frac{1}{\text{Var}(\Omega_{\text{CFD},i})}
+                    \frac{1}{N}
+                    \sum_{i=1}^{N} (\Omega_{\text{CFD},i} - {\Omega}_{pred,i})^2$$</span>
+            </li>
+        </ul>
+    </div>
+    <aside class="notes">
+        This shows the data split method used for training and evaluation. As shown in the left graph, we used 1000
+        snapshots after increasing Reynolds number from rest and reaching stable flow. For training and evaluation, we
+        split the 1000 snapshots into 800 training data and 200 evaluation data. Since DL-ROM predicts the 11th snapshot
+        from 10 inputs, in training we made DL-ROM learn so its predictions match the actual 11th data. That is,
+        initially predictions are far off because weights are given randomly, but as training progresses, weight
+        parameters are updated and predictions approach actual data. On the other hand, in evaluation we assessed how
+        well DL-ROM predictions match actual data. Specifically, we made DL-ROM predict using evaluation data and
+        calculated the difference between predictions and actual data. We used mean squared error as the evaluation
+        metric. This represents the mean of squared differences between vorticity calculated by CFD and vorticity
+        predicted by DL-ROM. The calculation formula is shown at the bottom right.
+    </aside>
+</section>
+
+<section data-auto-animate>
+    <h2>Evaluation and Learning Model</h2>
+    <p>Training results</p>
+    <div style="display: flex; justify-content: center; gap: 1px;">
+        <img src="train_test.svg" style="width: 800px;" />
+        <img src="training_plot.svg" style="width: 900px;" />
+    </div>
+    <p>CPU: Intel(R) Xeon(R) CPU E5-2643 v4 @ 3.40GHz<br>GPU: NVIDIA GeForce GTX 1080 8GB / RAM: 100GB<br>Training time:
+        ~10h /
+        Memory usage: ~1GB</p>
+    <aside class="notes">
+        This shows the training results. The right graph shows the change in mean squared error with training progress.
+        The horizontal axis is training epochs, and the vertical axis is mean squared error. The blue line shows mean
+        squared error for training data, and the orange line shows mean squared error for evaluation data. We can see
+        that mean squared error for both datasets decreases as training progresses. This indicates that DL-ROM is
+        becoming able to accurately predict fluid behavior. While train data decreases smoothly, test data increases
+        slightly in some parts. This is a sign of overfitting, but since both MSEs finally converge to similar levels,
+        we believe significant overfitting did not occur. We used GPU for training. Training took about 10 hours with
+        memory usage of about 1GB. The hardware used was Intel Xeon E5-2643 v4 CPU, NVIDIA GeForce GTX 1080 8GB GPU, and
+        100GB RAM.
+    </aside>
+</section>
+
+---
+
+<section data-auto-animate>
+    <h2>Results</h2>
+</section>
+
+<section data-auto-animate>
+    <h2>Results</h2>
+    <p>Fluid simulation by DL-ROM</p>
+    <div style="display: flex; justify-content: center; gap: 1px;">
+        <img src="train_simulate.svg" style="width: 900px;" />
+        <ul style="text-align: left;" class="plain-list">
+            <br><br>
+            <li class="fragment fade-up">First 10 snapshots use test data<br>　</li>
+            <li class="fragment fade-up"> → Predict 11th from 10 inputs<br>　</li>
+            <li class="fragment fade-up"> → Add predicted 11th to input, predict 12th<br>　</li>
+            <li class="fragment fade-up"> → Repeat this process to predict up to 35th<br>　</li>
+        </ul>
+    </div>
+    <aside class="notes">
+        This shows the method of fluid simulation by DL-ROM. We used evaluation data for the first 10 snapshots. We
+        input these 10 snapshots to DL-ROM and predicted the 11th. Next, we added the predicted 11th to the input and
+        predicted the 12th. As you can see, from the 21st snapshot onwards, we use only DL-ROM predictions. We repeated
+        this process and predicted up to the 35th snapshot. This allowed us to evaluate how accurately DL-ROM can
+        predict fluid behavior.
+    </aside>
+</section>
+
+<section data-auto-animate>
+    <h2>Results</h2>
+    <p>Fluid simulation by DL-ROM</p>
+    <div style="display: flex; justify-content: center; gap: 1px;">
+        <p style="text-align: left;"><br>CFD results<br>(800min / 1s)<br><br><br><br>DL-ROM predictions<br>(3min /
+            1s)<br><br><br><br>Difference</p>
+        <div style="display: flex; flex-direction: column; gap: 1px;">
+            <img src="label.gif" style="width: 800px;" />
+            <img src="pred.gif" style="width: 800px;" />
+            <img src="diff.gif" style="width: 800px;" />
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 1px;" class="fragment fade-up">
+            <img src="SmallBall_Water_R2.svg" style="height: 500px;" />
+            <p><span style="font-size: 0.7em;">$$\text{MSE} = \frac{1}{\text{Var}(\Omega_{\text{CFD},i})} \frac{1}{N}
+                    \sum_{i=1}^{N} (\Omega_{\text{CFD},i} - {\Omega}_{pred,i})^2$$</span></p>
+        </div>
+    </div>
+    <h3 class="fragment fade-up">Achieved 260× speedup</h3>
+    <aside class="notes">
+        This shows the results of fluid simulation by DL-ROM. The upper row on the left shows CFD results, the middle
+        row shows DL-ROM predictions, and the lower row shows their differences. As you can see, DL-ROM predictions
+        agree very well with CFD results. Looking at the differences below, we can see that differences are small in
+        most regions. However, there are some areas where differences are large. This is considered to be because DL-ROM
+        tried to predict fluid behavior it had not learned. Also, on the right we show mean squared error at each time
+        step. As expected, error gradually increases over time. This is because DL-ROM predictions are used as input for
+        the next time step, so errors accumulate. On the other hand, it maintains low values overall, indicating that
+        DL-ROM can predict fluid behavior with high accuracy. We believe it can maintain within the engineering
+        acceptable error range of below 5% for at least 3 cycles. Furthermore, please note the calculation time. While
+        CFD took about 800 minutes to analyze 1 second of fluid behavior, DL-ROM could perform the same analysis in
+        about 3 minutes. This achieved a 260× speedup.
+    </aside>
+</section>
+
+---
+
+<section data-auto-animate>
+    <h2>Achievements and Future Prospects</h2>
+    <aside class="notes">
+        Finally, let me discuss achievements and future prospects.
+    </aside>
+</section>
+
+<section data-auto-animate>
+    <h2>Achievements and Future Prospects</h2>
+    <br>
+    <div style="display: flex; justify-content: space-between; gap: 1px;">
+        <div style="flex: 10;">
+            <h3>What was obtained in this study</h3>
+            <ul>
+                <li>Applied DL-ROM to 2D bearing fluid</li>
+                <ul>
+                    <li>Represented cylindrical space in polar coordinates</li>
+                    <li>Used convolutional NN for images</li>
+                </ul>
+                <li>Training evaluation conditions</li>
+                <ul>
+                    <li>Reynolds number Re: 400</li>
+                    <li>Single-phase Newtonian fluid</li>
+                    <li>Represented interior boundaries with zero-filling</li>
+                    <li>Learned fluid vorticity</li>
+                </ul>
+                <li>Training results</li>
+                <ul>
+                    <li>Predicted next time step from CFD input</li>
+                    <li>Achieved 260× speedup</li>
+                </ul>
+            </ul>
+        </div>
+        <div style="flex: 10;" class="fragment fade-up">
+            <h3>Future prospects</h3>
+            <ul>
+                <li>Application to 3D bearing fluid</li>
+                <li>Non-Newtonian fluid and gas-liquid multiphase</li>
+                <li>Representation methods other than zero-filling for interior boundaries</li>
+            </ul>
+        </div>
+    </div>
+    <aside class="notes">
+        What was obtained in this study includes, first, applying DL-ROM to 2D bearing fluid. We represented cylindrical
+        space in polar coordinates and used convolutional neural networks for images. Next, for training evaluation
+        conditions, we targeted single-phase Newtonian fluid with Reynolds number Re of 400, represented interior
+        boundaries with zero-filling, and learned fluid vorticity. Finally, for training results, we predicted the next
+        time step from CFD input and achieved a 260× speedup.
+        Future prospects include, first, application to 3D bearing fluid. This will enable prediction of more realistic
+        bearing fluid behavior. Next, application to non-Newtonian fluids and gas-liquid multiphase flows. This will
+        enable prediction of more complex fluid behavior such as grease. Finally, consideration of representation
+        methods other than zero-filling for interior boundaries. This is expected to improve DL-ROM accuracy and expand
+        its application range. This concludes my presentation. Thank you for your attention.
+    </aside>
+</section>
