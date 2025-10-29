@@ -3,12 +3,50 @@
     <h2>of Fluid Flow in 2D Bearing Cavity</h2>
     <p>State Key Laboratory of Tribology in Advanced Equipment and the Friction Forum 2025</p>
     <p>November 5, 2025 at Tsinghua University in Beijing</p>
-    <p>NSK Ltd. *Koji Kususaki, *Takashi Noda</p>
     <p>Koji Kususaki*, Takashi Noda*, *NSK Ltd.</p>
     <p>Contact: <a href="mailto:kususaki@nsk.com">kususaki@nsk.com</a></p>
     <aside class="notes">
-        Hello, I am Kususaki from NSK, and I will present "Deep Learning-Based Reduced Order Modeling of Fluid Flow in
-        2D Bearing Cavity".
+        Hello, I am Koji from NSK, and I will present
+        "Deep Learning-Based Reduced Order Modeling of Fluid Flow in 2D Bearing Cavity".
+    </aside>
+</section>
+
+---
+
+<section data-auto-animate>
+    <h2>What is NSK?</h2>
+    <aside class="notes">
+        First, let me introduce NSK.
+    </aside>
+</section>
+
+<section data-auto-animate>
+    <h2>What is NSK?</h2>
+    <div style="display: flex; justify-content: flex-start; gap: 1px;">
+        <img src="NSK_0.png" style="width: 500px;" />
+        <img src="NSK_1.png" style="width: 800px;" />
+        <img src="NSK_2.png" style="width: 500px;" />
+    </div>
+    <p class="r-fit-text">
+        <br>A global leader in bearings and precision machinery components
+    </p>
+    <aside class="notes">
+        NSK was founded in 1916 and has over 100 years of history.
+        We are a global company that manufactures and sells bearings and precision machinery components.
+        Our products are used in various
+        industries such as automotive, industrial machinery, and aerospace.
+    </aside>
+</section>
+
+<section data-auto-animate>
+    <h2>What is NSK?</h2>
+    <img src="NSK_4.png" style="width: 1900px;" />
+    <p class="r-fit-text">
+        <br>Committed to providing high-quality products and services to customers worldwide
+    </p>
+    <aside class="notes">
+        We are committed to providing high-quality
+        products and services to our customers worldwide.
     </aside>
 </section>
 
@@ -37,7 +75,7 @@
 <section data-auto-animate>
     <h2>CFD and AI</h2>
     <aside class="notes">
-        First, let me explain the relationship between CFD and AI.
+        Now, let me explain the relationship between CFD and AI.
     </aside>
 </section>
 
@@ -52,8 +90,10 @@
         behavior. This is an example of CFD analysis of fluid within bearings that our company published previously. As
         you can see, we can visualize phenomena such as where grease accumulates in detail, and we can also analyze
         phenomena that are difficult to visualize, such as shear heating and resulting viscosity reduction. However, CFD
-        analysis has high computational costs, and it can take days to weeks to analyze one second of fluid behavior.
-        Therefore, it is not suitable when we want to examine many parameters in the early stages of design studies.
+        analysis has high computational costs. For example, in the calculation shown in this figure, it takes several
+        seconds to reach steady state, which still requires several days in real time. Therefore, it can take days to
+        weeks to analyze one second of fluid behavior. Therefore, it is not suitable when we want to examine many
+        parameters in the early stages of design studies.
     </aside>
 </section>
 
@@ -116,7 +156,6 @@
 
 <section data-auto-animate>
     <h2>DL-ROM</h2>
-    <p>Creating reduced-order models using deep learning</p>
     <style>
         .red {
             color: red;
@@ -125,6 +164,7 @@
     <p><span class="red">D</span>eep <span class="red">L</span>earning for <span class="red">R</span>educed <span
             class="red">O</span>rder <span class="red">M</span>odelling</p>
     <img src="framework_nn.png" style="width: 1500px;" />
+    <p>Creating reduced-order models using deep learning</p>
     <p style="font-size: 0.5em;">Pant P, et al. Deep learning for reduced order modelling and efficient temporal
         evolution of fluid simulations. Phys Fluids. 2021; 33(10):107101.</p>
     <aside class="notes">
@@ -235,7 +275,9 @@
         </ul>
     </div>
     <aside class="notes">
-        We targeted single-phase Newtonian fluid with Reynolds number 400. Since the inner ring has the highest
+        We targeted single-phase Newtonian fluid with Reynolds number 400. This Reynolds number was chosen to match
+        previous research and because vortices were most clearly visible at this value. Since the inner ring has the
+        highest
         velocity, we defined the Reynolds number using this velocity, bearing dimensions, and fluid viscosity. CFD
         output fluid vorticity, which was normalized to have mean 0 and variance 1. Interior boundaries were represented
         by zero-filling. We also rotated the coordinate system to fix the ball position. This is because learning
@@ -267,8 +309,10 @@
     <aside class="notes">
         This shows the data split method used for training and evaluation. As shown in the left graph, we used 1000
         snapshots after increasing Reynolds number from rest and reaching stable flow. For training and evaluation, we
-        split the 1000 snapshots into 800 training data and 200 evaluation data. Since DL-ROM predicts the 11th snapshot
-        from 10 inputs, in training we made DL-ROM learn so its predictions match the actual 11th data. That is,
+        split the 1000 snapshots into 800 training data and 200 evaluation data. The number of training and test data
+        was also matched to previous research. Indeed, this number was sufficient for this study. Since DL-ROM predicts
+        the 11th snapshot from 10 inputs, in training we made DL-ROM learn so its predictions match the actual 11th
+        data. That is,
         initially predictions are far off because weights are given randomly, but as training progresses, weight
         parameters are updated and predictions approach actual data. On the other hand, in evaluation we assessed how
         well DL-ROM predictions match actual data. Specifically, we made DL-ROM predict using evaluation data and
@@ -287,7 +331,7 @@
     </div>
     <p>CPU: Intel(R) Xeon(R) CPU E5-2643 v4 @ 3.40GHz<br>GPU: NVIDIA GeForce GTX 1080 8GB / RAM: 100GB<br>Training time:
         ~10h /
-        Memory usage: ~1GB</p>
+        Memory usage: ~100MB</p>
     <aside class="notes">
         This shows the training results. The right graph shows the change in mean squared error with training progress.
         The horizontal axis is training epochs, and the vertical axis is mean squared error. The blue line shows mean
@@ -295,9 +339,9 @@
         that mean squared error for both datasets decreases as training progresses. This indicates that DL-ROM is
         becoming able to accurately predict fluid behavior. While train data decreases smoothly, test data increases
         slightly in some parts. This is a sign of overfitting, but since both MSEs finally converge to similar levels,
-        we believe significant overfitting did not occur. We used GPU for training. Training took about 10 hours with
-        memory usage of about 1GB. The hardware used was Intel Xeon E5-2643 v4 CPU, NVIDIA GeForce GTX 1080 8GB GPU, and
-        100GB RAM.
+        we believe significant overfitting did not occur. We used GPU for training and testing. The specifications are
+        as
+        follows. Training took about 10 hours with memory usage of about 100MB. The hardware used as described here.
     </aside>
 </section>
 
@@ -358,7 +402,10 @@
         DL-ROM can predict fluid behavior with high accuracy. We believe it can maintain within the engineering
         acceptable error range of below 5% for at least 3 cycles. Furthermore, please note the calculation time. While
         CFD took about 800 minutes to analyze 1 second of fluid behavior, DL-ROM could perform the same analysis in
-        about 3 minutes. This achieved a 260× speedup.
+        about 3 minutes. This achieved a 260× speedup. This represents a significant breakthrough where calculations
+        that previously took days can now be completed in hours, opening up possibilities for practical design
+        applications. Such dramatic speedup enables engineers to explore many more design parameters in the early stages
+        of bearing development, potentially revolutionizing our design process.
     </aside>
 </section>
 
