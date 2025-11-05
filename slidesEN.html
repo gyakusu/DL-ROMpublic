@@ -2,7 +2,7 @@
     <h2>Deep Learning-Based Reduced Order Modeling</h2>
     <h2>of Fluid Flow in 2D Bearing Cavity</h2>
     <p>State Key Laboratory of Tribology in Advanced Equipment and the Friction Forum 2025</p>
-    <p>November 5, 2025 at Tsinghua University in Beijing</p>
+    <p>November 6, 2025 at Tsinghua University in Beijing</p>
     <p>Koji Kususaki*, Takashi Noda*, *NSK Ltd.</p>
     <p>Contact: <a href="mailto:kususaki@nsk.com">kususaki@nsk.com</a></p>
     <aside class="notes">
@@ -10,6 +10,27 @@
         "Deep Learning-Based Reduced Order Modeling of Fluid Flow in 2D Bearing Cavity".
     </aside>
 </section>
+
+<!--
+    Biography (English):
+
+    Koji Kususaki is a Data Science Engineer at NSK Ltd., where he has worked since 2017. He received an M.S.
+    in Physics (specializing in Quantum Optics) from Waseda University (2015–2017). At NSK, his work focuses
+    primarily on multibody dynamics and machine learning.
+Long abstract (English):
+
+Computational Fluid Dynamics (CFD) is widely used across mechanical design, environmental, and biomedical engineering to improve physical understanding and support design optimization, and it has been applied extensively to bearing design for lubricant behavior and shape optimization [1,2]. However, the large computational cost of high-fidelity CFD limits its suitability for iterative optimization workflows. Recently, deep learning (DL) techniques have been investigated to accelerate CFD-based analysis [3,4]. In this study, we apply the Deep Learning—Reduced Order Modelling (DL-ROM) framework proposed by Pant et al. [3] to predict flow inside a 2D bearing cavity and thereby accelerate vorticity field prediction. Vorticity snapshots (single-phase Newtonian fluid, Re = 400) computed by commercial CFD were normalized and preprocessed: interior solid regions were zero-filled, cylindrical geometry was mapped to a rectangular grid via polar coordinates, and a rotating coordinate frame was used to fix the ball location. The DL-ROM uses a convolutional encoder to compress ten consecutive snapshots (shape 320×80×10) to a 32-dimensional latent vector, a learned temporal evolution operator to advance the latent state, and a convolutional decoder to reconstruct the next snapshot. The model was trained on 800 snapshots and evaluated on 200, using variance-normalized mean squared error (MSE) as the metric. The trained DL-ROM reproduces CFD vorticity fields with small error while achieving approximately a 260× speedup (≈3 min vs ≈800 min per 1 s of simulation). This acceleration enables rapid parametric exploration in bearing design. Future work will extend the approach to 3D geometries, non-Newtonian and multiphase flows, and more sophisticated treatments of interior boundaries.
+
+Short abstract (English):
+
+We demonstrate a DL-ROM approach to accelerate prediction of vorticity in a 2D bearing cavity. By mapping CFD vorticity into rectangular image-like data, using a convolutional encoder–latent-time-evolution–decoder architecture trained on CFD snapshots (Re = 400), the model reproduces CFD results with low error and achieves ~260× speedup, enabling faster design exploration for bearings [1–4].
+
+Long Abstract (日本語):
+数値流体力学（CFD）は機械設計や環境工学，生体工学など幅広い分野で現象理解や設計最適化に活用されており，軸受設計においても潤滑油やグリースの挙動理解，形状最適化などに広く用いられています。しかし，軸受内部のような複雑な流れ場の解析には多大な計算時間が必要となり，繰り返し計算を要する最適化問題への適用は困難です。近年，この課題を解決する手法として，深層学習（Deep Learning, DL）を用いた流体解析の高速化が注目されています。本研究では，Pantらが提案した深層学習ベース低次元化モデル（DL-ROM）フレームワークを軸受内部流れの予測に適用し，2次元軸受空洞内で生じる流れ場（渦度）の予測を高速化した事例について報告します。
+
+Short Abstract (日本語):
+本研究は，深層学習ベース低次元化モデル（DL-ROM）を用いて，2次元軸受空洞内の流れ場予測を大幅に高速化した事例を報告します。
+-->
 
 ---
 
@@ -45,6 +66,8 @@
     </p>
     <aside class="notes">
         We are committed to providing high-quality products and services to our customers worldwide.
+        We are honored to be invited to the Friction Forum 2025. We would like to share the AI applications our company
+        has been working on, though they are still at an early stage. Thank you.
     </aside>
 </section>
 
@@ -84,11 +107,11 @@
     <p class="fragment fade-up"><span style="color: green;">✔︎</span>Desktop examination possible <span
             style="color: red;">✖︎</span>High computational cost (day~week / 1s)</p>
     <aside class="notes">
-        In bearings, we use CFD analysis to help us design better products because it helps us see how fluids move. This
-        is an example of CFD analysis of fluid inside bearings that our company has done before. As you can see, we can
-        visualize where grease distributes, and we can also study things that are hard to visualize, like heat from
-        friction and how that makes the viscosity decrease. But CFD analysis takes a very long time to calculate. For
-        example,
+        In bearings, we use CFD analysis to help us design better products because it helps us visualize how fluids
+        move. This is an example of CFD analysis of fluid inside bearings that our company has done before. As you can
+        see, we can visualize where grease distributes, and we can also study things that are hard to visualize, like
+        heat from friction and how that makes the viscosity decrease.<br>
+        1. But CFD analysis takes a very long time to calculate. For example,
         in this calculation, it takes several seconds to reach a steady state, which still needs several days
         in real time. This means it's not good when we want to test many different designs in the early stages of
         development.
@@ -98,7 +121,7 @@
 <section data-auto-animate>
     <h2>CFD and AI</h2>
     <p>Reducing CFD computational cost using AI</p>
-    <p>BASIC IDEA: Learn CFD results with AI to replace CFD</p>
+    <p><br>BASIC IDEA: Learn CFD results with AI to replace CFD</p>
     <aside class="notes">
         So, people have started looking for ways to use AI to make CFD calculations faster and cheaper. Here's the basic
         idea: we run expensive CFD calculations first and use those results to teach AI. Then the AI can work like a
@@ -114,7 +137,7 @@
     <p style="font-size: 0.5em;">Pant P, et al. Deep learning for reduced order modelling and efficient temporal
         evolution
         of fluid simulations. Phys Fluids. 2021; 33(10):107101.</p>
-    <p class="fragment fade-up">Learning fluid motion patterns and creating substitutes for governing equations</p>
+    <p>Learning fluid motion patterns and creating substitutes for governing equations</p>
     <aside class="notes">
         For example, let me explain using the DL-ROM that I used in this study. This is a method that uses deep learning
         to learn how fluids move and create replacements for the equations that control fluid flow.
@@ -190,7 +213,7 @@
         3.1. But DL-ROM has some rules we need to follow. First, the number of grid points must stay the same - we can't
         increase or decrease grid points during calculations.<br>
         3.2. Also, the data shape must be rectangular, like a picture. This is because we use the same type of neural
-        networks that are used to recognize images.<br>
+        networks that are used for image recognition.<br>
         3.3. And finally, we need to have values everywhere inside the boundaries. Boundaries are areas where there's no
         fluid, like the solid parts of the cylinder shown in this figure.
     </aside>
@@ -210,7 +233,7 @@
         Let me explain in more detail using specific numbers.<br>
         1. First, we use 10 fluid snapshots as input to DL-ROM.<br>
         2. For example, if each snapshot has 2D data with 320×80 grid points, putting 10 snapshots together gives us
-        data with shape like this.<br>
+        data with shape like this 3 dimension.<br>
         3. This data gets squeezed down by the encoder into a much smaller vector with shape 32. This
         small vector contains all the important information about what the fluid will do next.<br>
         4. Then, this vector gets expanded back by the decoder to data with shape same as one snapshot<br>
@@ -230,6 +253,9 @@
         feature vectors. On the other hand, the decoder consists of 5 transposed convolutional layers, batch
         normalization layers, and activation layers. This expands feature vectors back to their original shape
         and predicts fluid states at the next time step.
+        Textbooks often say a convolution matrix is a discrete form of a convolution integral.
+        That means it can represent differential operators.
+        So a well-designed convolutional model can learn the flow dynamics.
     </aside>
 </section>
 
@@ -252,7 +278,7 @@
     </div>
     <aside class="notes">
         In this study, we looked at fluid flow in 2D bearing cavities. As you can see in this figure, we studied fluid
-        that flows in a ring shape, just like what happens inside bearings. We used commercial CFD software to
+        that flows in a ring shape, just like cut ball bearings in 2D. We used commercial CFD software to
         calculate. The left animation shows how the fluid behaves according to CFD calculations, and the right
         figure shows the boundaries of our calculation area.
     </aside>
