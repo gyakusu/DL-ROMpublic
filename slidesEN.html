@@ -6,8 +6,8 @@
     <p>Koji Kususaki*, Takashi Noda*, *NSK Ltd.</p>
     <p>Contact: <a href="mailto:kususaki@nsk.com">kususaki@nsk.com</a></p>
     <aside class="notes">
-        Hello, I am Koji from NSK, and I will present
-        "Deep Learning-Based Reduced Order Modeling of Fluid Flow in 2D Bearing Cavity".
+        Thank you for introducing me. I am Koji from NSK, and I will present
+        "Deep Learning-Based Reduced Order Modeling of Fluid Flow in 2D Bearing Cavity".<br>
         We are honored to be invited to the Friction Forum 2025. We would like to share the AI applications our company
         has been working on, but they are still at an early stage. Please bear with me. Thank you.
     </aside>
@@ -253,7 +253,7 @@ Short Abstract (日本語):
         feature vectors. On the other hand, the decoder consists of 5 transposed convolutional layers, batch
         normalization layers, and activation layers. This expands feature vectors back to their original shape
         and predicts fluid states at the next time step.
-        Textbooks often say a convolution matrix is a discrete form of a convolution integral.
+        Generally speaking, textbooks often say a convolution matrix is a discrete form of a convolution integral.
         That means it can represent differential operators.
         So a well-designed convolutional model can learn the flow dynamics.
     </aside>
@@ -332,6 +332,8 @@ Short Abstract (日本語):
     </div>
     <aside class="notes">
         Here we explain how we split the data and how we trained and tested the model.<br>
+        First, we raise the rotation speed of the inner ring step by step and run the simulation until the flow becomes
+        steady.<br>
         1. We used 1000 snapshots from the CFD run. From these, 800 snapshots were used for training the model and 200
         were used for testing it.<br>
         2. The model takes 10 snapshots as input and tries to predict the 11th snapshot. During training, the model
@@ -494,7 +496,7 @@ Short Abstract (日本語):
         them with zeros. This could help improve prediction accuracy even more.
         This concludes my presentation. NSK is actively exploring AI applications, and we welcome collaboration and
         advice from experts in this field.<br>
-        1. Due to my limited English proficiency, I would prefer to answer individual questions after the presentation
+        1. Due to my limited English skills, I would prefer to answer individual questions after the presentation
         or via email. Thank you very much.
     </aside>
 </section>
