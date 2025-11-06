@@ -305,7 +305,7 @@ Short Abstract (日本語):
         2. We got vorticity data from CFD, which we made normal with mean 0 and variance 1.<br>
         3. We filled the solid parts with zeros.<br>
         4. We also made the coordinate system rotate to keep the ball in the same place. This is because it's hard for
-        the AI to learn when the boundary conditions keep changing.<br>
+        the AI to learn when the boundary conditions change over time.<br>
         5. Also, we changed the cylinder shape data into rectangle shape using polar coordinates. This is the most
         important data preparation step in this study. This lets us meet the rectangle data shape rule that DL-ROM
         needs.
@@ -362,8 +362,10 @@ Short Abstract (日本語):
         datasets goes down as training moves forward. This means that DL-ROM is getting better at predicting fluid
         behavior. While the training data error decreases smoothly, the test data error goes up slightly in some parts.
         This is a sign of overfitting, but since both errors end up at similar levels, we think serious overfitting
-        did not happen. We used GPU for training and testing. The computer specs are shown here. Training took about
-        10 hours and used about 100MB of memory.
+        did not happen. We used GPU for training and testing. The computer specs are shown here.
+        The computer is similar to a higher-end desktop PC. It has a fast multi-core CPU, a common gaming GPU,
+        and enough RAM for training.<br>
+        Training took about 10 hours and used about 100MB of memory.
     </aside>
 </section>
 
@@ -371,6 +373,9 @@ Short Abstract (日本語):
 
 <section data-auto-animate>
     <h2>Results</h2>
+    <aside class="notes">
+        Next, let me explain the results of fluid simulation by DL-ROM.
+    </aside>
 </section>
 
 <section data-auto-animate>
@@ -388,7 +393,7 @@ Short Abstract (日本語):
         </ul>
     </div>
     <aside class="notes">
-        This shows the method of fluid simulation by DL-ROM.<br>
+        Here is how we did the fluid simulation using DL-ROM.<br>
         1. We used evaluation data for the first 10 snapshots.<br>
         2. We input these 10 snapshots to DL-ROM and predicted the 11th.<br>
         3. Next, we added the predicted 11th to the input and predicted the 12th.<br>
@@ -472,12 +477,20 @@ Short Abstract (日本語):
             </ul>
         </div>
     </div>
+    <p>NSK exploring AI applications. Welcome collaboration and advice. Prefer individual questions or email due to
+        limited English proficiency.</p>
     <aside class="notes">
         Here is a summary of what we achieved. In this study, we successfully applied DL-ROM to 2D bearing fluid.
-        For future work, we have several exciting directions. First, we want to apply this to 3D bearing fluid. Second,
-        we want to work with non-Newtonian fluids and flows that have both gas and liquid. Finally, we want to find
-        better ways to handle the solid parts inside the boundaries, instead of just filling them with zeros. This
-        should make DL-ROM more accurate and useful for more situations. This concludes my presentation. Thank you for
-        your attention.
+        For future work, we have several exciting directions. First, we want to apply this to 3D bearing fluid.
+        3D cylindrical data can also be changed to rectangular data using cylindrical coordinates, similar to how we
+        used polar coordinates in 2D. This will allow us to use DL-ROM for more realistic bearing designs.
+        Second, we want to work with non-Newtonian fluids and flows that have both air and oil. Bearings often use
+        grease, which is a non-Newtonian fluid, so being able to simulate that will be very useful. Finally, we want to
+        find better ways to handle the solid parts inside the boundaries, instead of just filling them with zeros.
+        This could help improve prediction accuracy even more.
+        This concludes my presentation. NSK is actively exploring AI applications, and we welcome collaboration and
+        advice from experts in this field.
+        Due to my limited English proficiency, I would prefer to answer individual questions after the presentation or
+        via email. Thank you very much.
     </aside>
 </section>
